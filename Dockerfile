@@ -17,4 +17,5 @@ RUN curl -fsSL https://ftp.gnu.org/gnu/gcc/gcc-10.4.0/gcc-10.4.0.tar.gz | tar -x
 
 ENV CC=/opt/gcc-10.4.0/bin/gcc
 ENV CXX=/opt/gcc-10.4.0/bin/g++
+ENV LD_LIBRARY_PATH=/opt/gcc-10.4.0/lib64:$LD_LIBRARY_PATH
 ENV PATH=/opt/cmake-3.23.2-linux-x86_64/bin:$PATH
